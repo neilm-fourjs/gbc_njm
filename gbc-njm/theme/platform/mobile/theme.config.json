@@ -1,0 +1,6 @@
+{
+  "conditions": ["isMobile"],
+  "widgetFactory": {
+    "MainContainer": "cls.MainContainerWidget"
+  }
+}
