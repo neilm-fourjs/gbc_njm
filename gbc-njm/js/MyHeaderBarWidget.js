@@ -23,6 +23,7 @@ modulum('MyHeaderBarWidget', ['WidgetBase', 'WidgetFactory'],
      */
 
     var elb; // define var for the banner object
+    var elw; // define var for the warning object
 
     cls.MyHeaderBarWidget = context.oo.Class(cls.WidgetBase, function($super) {
       /** @lends classes.MyHeaderBarWidget.prototype */
@@ -42,6 +43,16 @@ modulum('MyHeaderBarWidget', ['WidgetBase', 'WidgetFactory'],
           this._model.addCurrentWindowChangeListener(this.onCurrentWindowChanged.bind(this));
 
           elb = this.getElement().querySelector(".MyHeaderBarWidget-banner");
+          elw = this.getElement().querySelector(".MyHeaderBarWidget-warning");
+          if (window.browserInfo.isFirefox) {					
+          	elw.textContent = "WARNING: I don't test on Firefox !";
+					} 
+          if (window.browserInfo.isEdge) {					
+          	elw.textContent = "WARNING: I don't test on Edge !";
+					} 
+          if (window.browserInfo.isIE) {					
+          	elw.textContent = "WARNING: You are using Legacy Browser - Upgrade to Chrome/Firefox/Edge !!";
+					} 
         },
 
         onNewApplication: function(application) {

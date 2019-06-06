@@ -1,33 +1,34 @@
 {
+  "customizationSuffix": "NJM",
   "themes": [{
       "name": "default",
-      "title": "NJM Blue",
-      "uses": ["platform/desktop", "platform/ur"]
+      "title": "Blue",
+      "uses": ["platform/browser", "platform/desktop"]
+    },
+    {
+      "name": "default_UR",
+      "title": "Blue",
+      "uses": ["platform/ur"]
     },
     {
       "name": "elite",
-      "title": "NJM Elite",
-      "uses": ["platform/desktop", "colors/elite"]
+      "title": "Elite",
+      "uses": ["platform/browser", "platform/desktop", "colors/elite"]
     },
     {
       "name": "clean",
       "title": "Clean Light",
-      "uses": ["platform/desktop", "colors/clean"]
+      "uses": ["platform/browser", "platform/desktop", "colors/clean"]
     },
     {
       "name": "dark",
       "title": "Clean Dark",
-      "uses": ["platform/desktop", "colors/dark"]
+      "uses": ["platform/browser", "platform/desktop", "colors/dark"]
     },
     {
       "name": "hivis",
       "title": "NJM High Visibility",
-      "uses": ["platform/desktop", "colors/hivis"]
-    },
-    {
-      "name": "gbc_default",
-      "title": "GBC Default",
-      "uses": ["platform/desktop", "colors/gbc_default"]
+      "uses": ["platform/browser", "platform/desktop", "colors/hivis"]
     },
     {
       "name": "default_mobile",
