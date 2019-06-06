@@ -2,7 +2,7 @@
   "themes": [{
       "name": "default",
       "title": "NJM Blue",
-      "uses": ["platform/desktop"]
+      "uses": ["platform/desktop", "platform/ur"]
     },
     {
       "name": "elite",

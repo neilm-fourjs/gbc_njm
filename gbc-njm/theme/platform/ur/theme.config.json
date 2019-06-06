@@ -1,0 +1,6 @@
+{
+  "conditions": ["isUR"],
+  "widgetFactory": {
+    "MainContainer": "cls.MainContainerWidget"
+  }
+}
