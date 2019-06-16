@@ -33,7 +33,7 @@
     {
       "name": "default_mobile",
       "title": "Default",
-      "uses": ["platform/mobile", "colors/clean"]
+      "uses": ["platform/mobile", "colors/clean_m"]
     },
     {
       "name": "highcontrast_mobile",

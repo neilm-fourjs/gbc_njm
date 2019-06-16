@@ -17,6 +17,11 @@ body {
   }
 }
 
+// get rid of bookmarks option
+.gbc_ChromeBarItemBookmarkWidget, .gbc_ApplicationHostMenuBookmarkWidget {
+	display: none !important;
+}
+
 .gbc_style_heading {
 	border-radius: 15px 15px 15px 15px;
 	font-size: 1.2em;
@@ -64,6 +69,3 @@ body {
 	overflow: visible;
 }
 
-.gbc_ApplicationHostMenuBookmarkWidget {
-	display: none !important;
-}
