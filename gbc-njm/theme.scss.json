@@ -31,6 +31,7 @@
 	"gbc-ButtonWidget-color": "$gbc-CommandLinkWidget-ttf-color",
 	"gbc-ButtonWidget-focus-background-color": "$theme-secondary-faded-color",
 	"gbc-TopMenuWidget-hover-color": "$theme-secondary-faded-color",
-	"gbc-ToolBarWidget-hover-color": "$theme-secondary-faded-color"
+	"gbc-ToolBarWidget-hover-color": "$theme-secondary-faded-color",
 
+	"njm-toolbar-padding": "6px"
 }

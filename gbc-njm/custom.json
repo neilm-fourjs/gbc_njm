@@ -16,6 +16,11 @@
       "uses": ["platform/browser", "platform/desktop", "colors/elite"]
     },
     {
+      "name": "mobile",
+      "title": "Mobile",
+      "uses": ["platform/browser", "platform/desktop", "colors/mobile"]
+    },
+    {
       "name": "clean",
       "title": "Clean Light",
       "uses": ["platform/browser", "platform/desktop", "colors/clean"]
@@ -33,7 +38,7 @@
     {
       "name": "default_mobile",
       "title": "Default",
-      "uses": ["platform/mobile", "colors/clean_m"]
+      "uses": ["platform/mobile", "colors/mobile"]
     },
     {
       "name": "highcontrast_mobile",
