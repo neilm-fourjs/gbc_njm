@@ -5,6 +5,7 @@
 	"theme-field-height-ratio": "0.6",
 	"theme-radiobutton-size": "12px",
 	"theme-checkbox-size": "12px",
+	"aui-mobileUI-default": "true",
 
 	"theme-host-action-default-height": "18px",
 	"gbc-ChromeBarWidget-height": "18px",
