@@ -9,6 +9,7 @@
 	"theme-sidebar-always-visible-min-width": "999999px",
 	"theme-sidebar-default-width": "200px",
 	"theme-animation-duration": "0.7s",
+	"aui-mobileUI-default": "true",
 
 	"palette-primary": "$mt-indigo",
 	"palette-secondary": "$mt-indigo",
