@@ -8,7 +8,7 @@
     {
       "name": "default_UR",
       "title": "Blue",
-      "uses": ["platform/ur"]
+      "uses": ["platform/ur", "colors/default_UR"]
     },
     {
       "name": "elite",
