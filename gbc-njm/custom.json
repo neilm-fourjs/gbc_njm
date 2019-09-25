@@ -1,49 +1,40 @@
 {
   "customizationSuffix": "NJM-1.00",
-  "themes": [{
+  "themes": [
+    {
       "name": "default",
       "title": "Blue",
-      "uses": ["platform/browser", "platform/desktop"]
+			"conditions":["isBrowser","isDesktop"]
     },
     {
-      "name": "default_UR",
+      "name": "default_ur",
       "title": "Blue",
-      "uses": ["platform/ur", "colors/default_UR"]
-    },
-    {
-      "name": "elite",
-      "title": "Elite",
-      "uses": ["platform/browser", "platform/desktop", "colors/elite"]
+      "uses": ["platform/ur"]
     },
     {
       "name": "mobile",
       "title": "Mobile",
-      "uses": ["platform/browser", "platform/desktop", "colors/mobile"]
+      "uses": ["platform/mobile", "colors/mobile"]
+    },
+    {
+      "name": "elite",
+      "title": "Elite",
+      "uses": ["colors/elite"]
     },
     {
       "name": "clean",
       "title": "Clean Light",
-      "uses": ["platform/browser", "platform/desktop", "colors/clean"]
+      "uses": ["colors/clean"]
     },
     {
       "name": "dark",
       "title": "Clean Dark",
-      "uses": ["platform/browser", "platform/desktop", "colors/dark"]
+      "uses": ["colors/dark"]
     },
     {
       "name": "hivis",
       "title": "NJM High Visibility",
-      "uses": ["platform/browser", "platform/desktop", "colors/hivis"]
-    },
-    {
-      "name": "default_mobile",
-      "title": "Default",
-      "uses": ["platform/mobile", "colors/mobile"]
-    },
-    {
-      "name": "highcontrast_mobile",
-      "title": "High contrast",
-      "uses": ["platform/mobile", "colors/highcontrast"]
+      "uses": ["colors/hivis"]
     }
   ]
 }
