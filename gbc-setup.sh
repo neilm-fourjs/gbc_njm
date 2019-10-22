@@ -33,7 +33,7 @@ fi
 
 if [ -z $VER ]; then
 	echo "VER is not set! aborting!"
-	echo "./gbc-setup.sh 1.00.38 build201707261501"
+	echo "./gbc-setup.sh 1.00.54 build201907221559"
 	exit 1
 fi
 if [ -z $BLD ]; then
@@ -66,8 +66,11 @@ fi
 cd gbc-current
 
 npm install
-npm install grunt-cli
-npm install bower
+
+# No longer required.
+#npm install grunt-cli
+#npm install bower
+
 npm audit fix
 grunt deps
 
