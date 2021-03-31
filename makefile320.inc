@@ -1,8 +1,9 @@
 
-export PACKVER=current
+export PACKVER=current320
 export GBCPROJECT=gbc-$(PACKVER)
 export DISTBIN=$(PWD)/../distbin
 export CWD=$(PWD)
+export BUILDCMD=grunt
 
 ifeq (,$(wildcard $(PWD)/custom.json))
 	export NOCFG="missing $(PWD)/custom.json"

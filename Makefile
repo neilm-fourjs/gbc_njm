@@ -1,18 +1,18 @@
 
 GBCBASE=$(PWD)
 
-include makefile.inc
+include makefile$(GENVER).inc
 
 BASE=$(shell pwd)
 dirs=gbc-njm
 
-all: distbin gbc-current subdirs
+all: distbin gbc-current$(GENVER) subdirs
 
 distbin:
 	mkdir distbin
 
 # Setup the GBC build env
-gbc-current: 
+gbc-current$(GENVER): 
 	./gbc-setup.sh > gbc-setup.out
 
 subdirs: $(dirs)
@@ -30,3 +30,4 @@ undeploy:
 	gasadmin gbc --undeploy $(dirs)
 
 redeploy: undeploy deploy
+
