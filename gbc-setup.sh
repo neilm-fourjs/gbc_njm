@@ -1,3 +1,4 @@
+#!/bin/bash
 
 # This script attempts to setup a GBC dev environment
 #
@@ -16,6 +17,7 @@ BASE=$(pwd)
 GBC=gbc
 VER=$1
 BLD=$2
+NVMVER=12.18.4
 
 if [ -z "$GENVER" ]; then
 	echo "GENVER is not set!"
@@ -74,19 +76,13 @@ if [ ! -d $BLDDIR ]; then
 	ln -s gbc-$VER gbc-current$GENVER
 fi
 
-cd gbc-current$GENVER
-
-npm install
-if [ "$GENVER" = "400" ]; then
-	gbc build
-else
-	npm install grunt-cli
-	npm audit fix
-	grunt deps
-	grunt
-fi
-
 cd $SAVDIR
 if [ ! -d gbc-current$GENVER ]; then
 	ln -s ../gbc-current$GENVER ./gbc-current$GENVER
 fi
+
+cd gbc-current$GENVER
+
+source ~/.nvm/nvm.sh
+nvm install $NVMVER
+

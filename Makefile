@@ -1,10 +1,10 @@
 
 GBCBASE=$(PWD)
 
-include makefile$(GENVER).inc
+include makefile.inc
 
 BASE=$(shell pwd)
-dirs=gbc-njm
+dirs=$(shell find . -maxdepth 1 -type d -name gbc-\*)
 
 all: distbin gbc-current$(GENVER) subdirs
 
